@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.google.com; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Padaria Saraiva | Pães artesanais, doces e café fresquinho</title>
+<meta name="description" content="Padaria Saraiva: pães fresquinhos, doces irresistíveis e aquele café especial todos os dias. Faça seu pedido pelo WhatsApp.">
+<meta property="og:title" content="Padaria Saraiva"><meta property="og:description" content="O sabor de momentos especiais começa aqui."><meta property="og:image" content="assets/img/logo.png"><link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Padaria Saraiva","image":"assets/img/counter.jpg"}</script>
+</head>
+<body>
+<header class="site-header" id="top">
+  <a class="logo" href="#top" aria-label="Padaria Saraiva – início"><img src="assets/img/logo.png" alt="" width="56" height="56"><b>Padaria <span>Saraiva</span></b></a>
+  <button class="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="nav"><a href="#populares">Destaques</a><a href="#cardapio">Cardápio</a><a href="#sobre">Sobre nós</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></nav>
+  <button class="btn btn-primary cart-open">🛒 <span class="lg">Faça seu </span>pedido <b class="cart-count">0</b></button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <img class="hero-logo" src="assets/img/logo.png" alt="Padaria Saraiva – pães artesanais e confeitaria" width="120" height="120">
+    <p class="eyebrow">Padaria de bairro, feita à mão</p>
+    <h1>O sabor de momentos especiais começa aqui.</h1>
+    <p>Pães fresquinhos, doces irresistíveis e aquele café especial todos os dias.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#cardapio">Ver nosso cardápio</a><button class="btn btn-ghost cart-open">Peça agora</button></div>
+  </div>
+  <div class="hero-img tilt"><img src="assets/img/counter.jpg" alt="Balcão da Padaria Saraiva com pães artesanais, doces e croissants" fetchpriority="high"><span class="badge">Assado todos os dias 🥖</span></div>
+</section>
+
+<section id="populares" class="section"><h2 class="reveal">Os mais pedidos</h2><p class="lead reveal">Os queridinhos da casa, direto do forno.</p><div class="grid" id="popular-grid"></div></section>
+
+<section id="cardapio" class="section alt"><h2 class="reveal">Nosso cardápio</h2><div class="tabs" id="tabs" role="tablist"></div><div class="grid" id="menu-grid"></div></section>
+
+<section id="sobre" class="section about">
+  <div class="about-img reveal tilt"><img src="assets/img/bread-rustic.jpg" alt="Pão rústico recém-assado sobre tábua de madeira" loading="lazy"></div>
+  <div class="reveal"><h2>Sobre nós</h2><p>A Padaria Saraiva nasceu do sonho de uma equipe que decidiu transformar a paixão pela comida em realidade, construindo cada cantinho deste espaço com as próprias mãos e muito suor. Sem grandes orçamentos, mas com coragem de sobra, unimos nossas forças para criar um lugar acolhedor, onde cada pão carrega o cuidado, a simplicidade e a dedicação de quem está começando um legado do zero.</p></div>
+</section>
+
+<section id="diferenciais" class="section alt"><h2 class="reveal">Por que escolher a Saraiva</h2>
+  <div class="features">
+    <article class="reveal"><span>🥐</span><h3>Sempre fresquinhos</h3><p>Fornadas ao longo do dia para você levar pão quentinho.</p></article>
+    <article class="reveal"><span>🌾</span><h3>Ingredientes de qualidade</h3><p>Farinhas, queijos e frutas bem selecionados.</p></article>
+    <article class="reveal"><span>🙌</span><h3>Produção artesanal</h3><p>Massas feitas à mão, com tempo e carinho.</p></article>
+    <article class="reveal"><span>☕</span><h3>Atendimento acolhedor</h3><p>Aqui você é recebido como em casa.</p></article>
+    <article class="reveal"><span>🛵</span><h3>Entrega rápida</h3><p>Peça pelo site e receba sem sair do lugar.</p></article>
+  </div>
+</section>
+
+<section class="section"><h2 class="reveal">Um cantinho para você</h2>
+  <div class="carousel" id="carousel" aria-roledescription="carrossel">
+    <div class="slides"></div>
+    <button class="car-btn prev" aria-label="Anterior">‹</button><button class="car-btn next" aria-label="Próximo">›</button>
+  </div>
+</section>
+
+<section id="contato" class="section alt"><h2 class="reveal">Localização e contato</h2>
+  <div class="contact">
+    <div class="reveal">
+      <p>📍 <span data-bind="address"></span></p>
+      <p>📞 <a data-bind="phone"></a></p>
+      <p>💬 <a data-bind="wa" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+      <h3>Horários</h3><ul id="hours"></ul>
+      <p class="social"><a data-bind="ig" target="_blank" rel="noopener noreferrer">Instagram</a> · <a data-bind="fb" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+    </div>
+    <iframe id="map" title="Mapa da Padaria Saraiva" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+</main>
+
+<footer><img class="foot-logo" src="assets/img/logo.png" alt="" width="90" height="90"><p>© <span id="year"></span> Padaria Saraiva · Feita com carinho e farinha.</p></footer>
+
+<div class="overlay" hidden></div>
+<aside class="drawer" aria-label="Carrinho" aria-hidden="true">
+  <header><h2>Seu pedido</h2><button class="close" aria-label="Fechar carrinho">✕</button></header>
+  <ul id="cart-items"></ul>
+  <p class="empty">Seu carrinho está vazio. Que tal um pãozinho? 🥖</p>
+  <footer>
+    <label>Seu nome<input id="cust-name" maxlength="60" autocomplete="name"></label>
+    <label>Observações<textarea id="cust-note" maxlength="200" rows="2"></textarea></label>
+    <p class="total">Total <b id="cart-total">R$ 0,00</b></p>
+    <button class="btn btn-primary" id="checkout">Finalizar pelo WhatsApp</button>
+    <button class="link" id="clear">Limpar carrinho</button>
+  </footer>
+</aside>
+<script type="module" src="src/controllers/appController.js"></script>
+</body>
+</html>
