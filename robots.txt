@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://padaria-saraiva.dev-br.workers.dev/sitemap.xml

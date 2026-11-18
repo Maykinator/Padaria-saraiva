@@ -18,3 +18,7 @@ ES Modules exigem http(s): localmente use `python3 -m http.server` (não abra o 
 
 ## Segurança
 CSP restritiva, `createElement`/`textContent` (sem XSS), carrinho validado contra o catálogo, links externos com `noopener noreferrer`.
+
+## SEO / Google
+URL do site configurada como https://padaria-saraiva.dev-br.workers.dev/ em: `sitemap.xml`, `robots.txt` e no `<link rel="canonical">` do `index.html`.
+Depois, no Google Search Console: adicione o site → Sitemaps → envie `sitemap.xml`.
